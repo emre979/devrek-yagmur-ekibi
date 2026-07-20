@@ -1,105 +1,214 @@
-<!DOCTYPE html><title>Devrek Yağmur Ekibi | Düğün, Nişan, Kına Organizasyonu</title>
+<!DOCTYPE html>
 <html lang="tr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Devrek Yağmur Ekibi</title>
+
+<title>Devrek Yağmur Ekibi | Düğün - Nişan - Kına Organizasyonu</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial,Helvetica,sans-serif;
+font-family:'Poppins',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
 }
 
 body{
-background:#111;
+
+background:#090909;
 color:white;
+
 }
 
 header{
+
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(0,0,0,.45);
+backdrop-filter:blur(10px);
+z-index:999;
+
+}
+
+.logo{
+
+font-size:28px;
+font-weight:700;
+color:#D4AF37;
+
+}
+
+nav a{
+
+text-decoration:none;
+color:white;
+margin-left:30px;
+transition:.3s;
+
+}
+
+nav a:hover{
+
+color:#D4AF37;
+
+}
+
+.hero{
+
 height:100vh;
-background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
-url("https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1600&q=80");
+
+background:
+
+linear-gradient(rgba(0,0,0,.60),rgba(0,0,0,.70)),
+
+url("https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1800&q=80");
+
 background-size:cover;
 background-position:center;
+
 display:flex;
-align-items:center;
 justify-content:center;
+align-items:center;
 text-align:center;
+
+padding:20px;
+
 }
 
-header h1{
-font-size:60px;
+.hero h1{
+
+font-size:65px;
 margin-bottom:20px;
+color:#fff;
+
 }
 
-header p{
+.hero span{
+
+color:#D4AF37;
+
+}
+
+.hero p{
+
 font-size:22px;
-margin-bottom:30px;
+max-width:800px;
+margin:auto;
+
+line-height:35px;
+
+}
+
+.buttons{
+
+margin-top:40px;
+
 }
 
 .btn{
+
 display:inline-block;
-padding:15px 35px;
-background:#d4af37;
-color:black;
-font-weight:bold;
-text-decoration:none;
+
+padding:16px 38px;
+
 border-radius:50px;
-transition:.3s;
-}
 
-.btn:hover{
-transform:scale(1.08);
-}
-
-section{
-padding:70px 10%;
-}
-
-h2{
-text-align:center;
-margin-bottom:40px;
-font-size:38px;
-color:#d4af37;
-}
-
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
-}
-
-.card{
-background:#1d1d1d;
-padding:25px;
-border-radius:15px;
-text-align:center;
-font-size:22px;
-}
-
-.contact{
-text-align:center;
-}
-
-.contact a{
-display:inline-block;
-margin:10px;
-padding:15px 30px;
-background:#25D366;
-color:white;
 text-decoration:none;
-border-radius:40px;
-font-size:20px;
+
+font-weight:bold;
+
+margin:10px;
+
+transition:.35s;
+
 }
 
-footer{
-text-align:center;
-padding:25px;
-background:black;
+.gold{
+
+background:#D4AF37;
+
+color:black;
+
 }
+
+.gold:hover{
+
+transform:scale(1.07);
+
+}
+
+.white{
+
+border:2px solid white;
+
+color:white;
+
+}
+
+.white:hover{
+
+background:white;
+color:black;
+
+}
+
+.scroll{
+
+position:absolute;
+
+bottom:30px;
+
+left:50%;
+
+transform:translateX(-50%);
+
+font-size:15px;
+
+opacity:.8;
+
+}
+
+@media(max-width:768px){
+
+.hero h1{
+
+font-size:42px;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+line-height:30px;
+
+}
+
+nav{
+
+display:none;
+
+}
+
+}
+
 </style>
 
 </head>
@@ -108,67 +217,71 @@ background:black;
 
 <header>
 
-<div>
+<div class="logo">
 
-<h1>🎻 Devrek Yağmur Ekibi</h1>
-
-<p>Düğün • Nişan • Kına • Sünnet • Organizasyon</p>
-
-<a href="#iletisim" class="btn">İletişime Geç</a>
+🎻 Devrek Yağmur Ekibi
 
 </div>
+
+<nav>
+
+<a href="#">Ana Sayfa</a>
+
+<a href="#">Hakkımızda</a>
+
+<a href="#">Galeri</a>
+
+<a href="#">İletişim</a>
+
+</nav>
 
 </header>
 
-<section>
+<section class="hero">
 
-<h2>Enstrümanlarımız</h2>
+<div>
 
-<div class="cards">
+<h1>
 
-<div class="card">🎻 Keman</div>
+<span>Devrek</span>
 
-<div class="card">🎺 Klarnet</div>
+Yağmur Ekibi
 
-<div class="card">🥁 Davul</div>
+</h1>
 
-<div class="card">🎼 Kanun</div>
+<p>
 
-<div class="card">🪕 Bağlama</div>
+Hayallerinizi müziğimizle gerçeğe dönüştürüyoruz.
 
-<div class="card">🎷 Zurna</div>
+Düğün, nişan, kına, sünnet, asker eğlencesi ve tüm organizasyonlarınızda profesyonel müzik hizmeti sunuyoruz.
 
-<div class="card">🎹 Org</div>
+</p>
+
+<div class="buttons">
+
+<a class="btn gold" href="tel:05369686573">
+
+📞 Hemen Ara
+
+</a>
+
+<a class="btn white" href="https://wa.me/905369686573">
+
+💬 WhatsApp
+
+</a>
+
+</div>
+
+</div>
+
+<div class="scroll">
+
+⬇ Aşağı Kaydır
 
 </div>
 
 </section>
-
-<section id="iletisim">
-
-<h2>İletişim</h2>
-
-<div class="contact">
-
-<h3>Emre Yağmur</h3>
-
-<a href="tel:05369686573">📞 0536 968 6573</a>
-
-<br><br>
-
-<h3>Tayfur Yağmur</h3>
-
-<a href="tel:05388903973">📞 0538 890 3973</a>
-
-</div>
-
-</section>
-
-<footer>
-
-© 2026 Devrek Yağmur Ekibi - Tüm Hakları Saklıdır.
-
-</footer>
 
 </body>
 </html>
