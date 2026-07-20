@@ -3,184 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Devrek Yağmur Ekibi</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-.about{
+<link rel="stylesheet" href="style.css">
 
-padding:90px 8%;
-background:#111;
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-}
-
-.container{
-
-max-width:1200px;
-margin:auto;
-
-display:grid;
-grid-template-columns:1fr 1fr;
-
-gap:60px;
-align-items:center;
-
-}
-
-.about h2{
-
-font-size:42px;
-margin-bottom:20px;
-color:#D4AF37;
-
-}
-
-.about p{
-
-font-size:20px;
-line-height:34px;
-margin-bottom:20px;
-
-}
-
-.about-image{
-
-font-size:170px;
-text-align:center;
-
-}
-
-@media(max-width:900px){
-
-.container{
-
-grid-template-columns:1fr;
-text-align:center;
-
-}
-
-.about-image{
-
-font-size:120px;
-
-}
-
-}
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Poppins,sans-serif;
-}
-
-body{
-background:#090909;
-color:white;
-}
-
-header{
-position:fixed;
-width:100%;
-padding:20px 8%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-background:rgba(0,0,0,.65);
-backdrop-filter:blur(8px);
-z-index:1000;
-}
-
-.logo{
-font-size:30px;
-font-weight:700;
-color:#D4AF37;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-margin-left:25px;
-transition:.3s;
-}
-
-nav a:hover{
-color:#D4AF37;
-}
-
-.hero{
-height:100vh;
-background:
-linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.75)),
-url("https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1800&q=80");
-background-size:cover;
-background-position:center;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:20px;
-}
-
-.hero h1{
-font-size:65px;
-}
-
-.hero span{
-color:#D4AF37;
-}
-
-.hero p{
-margin-top:20px;
-font-size:22px;
-max-width:750px;
-line-height:35px;
-}
-
-.btns{
-margin-top:40px;
-}
-
-.btn{
-display:inline-block;
-padding:15px 35px;
-margin:10px;
-border-radius:40px;
-text-decoration:none;
-font-weight:bold;
-transition:.3s;
-}
-
-.gold{
-background:#D4AF37;
-color:black;
-}
-
-.white{
-border:2px solid white;
-color:white;
-}
-
-.btn:hover{
-transform:scale(1.05);
-}
-
-@media(max-width:768px){
-
-nav{
-display:none;
-}
-
-.hero h1{
-font-size:42px;
-}
-
-.hero p{
-font-size:18px;
-line-height:30px;
-}
-
-}
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 </head>
 
@@ -194,48 +25,36 @@ line-height:30px;
 
 <nav>
 
-<a href="#">Ana Sayfa</a>
+<a href="#anasayfa">Ana Sayfa</a>
 <a href="#hakkimizda">Hakkımızda</a>
-<a href="#">Hizmetler</a>
-<a href="#">Galeri</a>
-<a href="#">İletişim</a>
+<a href="#hizmetler">Hizmetler</a>
+<a href="#galeri">Galeri</a>
+<a href="#iletisim">İletişim</a>
 
 </nav>
 
 </header>
 
-<section class="hero">
+<section id="anasayfa" class="hero">
 
-<div>
+<div class="hero-content">
 
-<h1>
-
-<span>Devrek</span><br>
-
-Yağmur Ekibi
-
-</h1>
+<h1>Devrek <span>Yağmur Ekibi</span></h1>
 
 <p>
 
 Hayallerinizi müziğimizle gerçeğe dönüştürüyoruz.
 
-Düğün, nişan, kına, sünnet, asker eğlencesi ve tüm organizasyonlarda profesyonel müzik hizmeti.
-
 </p>
 
-<div class="btns">
+<div class="buttons">
 
-<a class="btn gold" href="tel:05369686573">
-
+<a href="tel:05369686573" class="gold">
 📞 Hemen Ara
-
 </a>
 
-<a class="btn white" href="https://wa.me/905369686573">
-
+<a href="https://wa.me/905369686573" class="white">
 💬 WhatsApp
-
 </a>
 
 </div>
@@ -243,35 +62,8 @@ Düğün, nişan, kına, sünnet, asker eğlencesi ve tüm organizasyonlarda pro
 </div>
 
 </section>
-<section id="hakkimizda" class="about">
 
-    <div class="container">
+<script src="script.js"></script>
 
-        <div class="about-text">
-            <h2>Hakkımızda</h2>
-
-            <p>
-                Devrek Yağmur Ekibi olarak düğün, nişan, kına gecesi,
-                sünnet, asker eğlencesi ve özel organizasyonlarda
-                profesyonel müzik hizmeti sunuyoruz.
-            </p>
-
-            <p>
-                Kaliteli ses sistemi, deneyimli müzisyen kadromuz ve
-                yılların verdiği tecrübeyle en özel günlerinizi
-                unutulmaz hale getiriyoruz.
-            </p>
-
-        </div>
-
-        <div class="about-image">
-
-            🎻
-
-        </div>
-
-    </div>
-
-</section>
 </body>
 </html>
