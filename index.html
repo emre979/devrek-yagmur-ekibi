@@ -154,7 +154,39 @@ button {
 
 </head>
 
-<body>
+body {
+    background: #111 !important;
+    color: white;
+}
+
+header {
+    background:
+    linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.85)),
+    url("https://images.unsplash.com/photo-1514525253161-7a46d19cd819") center/cover no-repeat !important;
+    
+    position: relative;
+    overflow: hidden;
+}
+
+header h1,
+header p {
+    position: relative;
+    z-index: 2;
+}
+
+header::before,
+header::after {
+    z-index: 1;
+}
+
+section {
+    background:#111;
+}
+
+.box {
+    background:#222 !important;
+    color:white;
+}
 
 <header>
 <h1>🎵 Devrek Yağmur Ekibi 🎵</h1>
